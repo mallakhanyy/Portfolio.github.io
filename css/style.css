@@ -17,17 +17,17 @@
 
 @font-face {
     font-family: monserrat;
-    src: url(../fonts/Montserrat,Roboto/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(../Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family: open-sans;
-    src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+    src: url(../OpenSans-SemiBold.ttf);
 }
 
 @font-face {
     font-family: light;
-    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+    src: url(../OpenSans-Light.ttf);
 }
 
 body {
