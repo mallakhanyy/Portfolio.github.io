@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header: #e72c66;
+    --Pheader: #787878;
+    --divBG: #FFFFFF;
+    --darkWord: #767676;
+    --footer: #333333;
+    --links: #b2c8f3;
+}
+
+@font-face {
+    font-family: monserrat;
+    src: url(../fonts/Montserrat,Roboto/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+body {
+    background-image: linear-gradient(#fde8ee, #b2c8f3);
+}
+
+header {
+    margin: 2%;
+    margin-top: 10%;
+}
+
+header h1 {
+    font-family: monserrat, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3.3em;
+    color: var(--header);
+}
+
+header p {
+    font-family: open-sans, sans-serif;
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Pheader);
+    line-height: 2;
+}
+
+section {
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.divA {
+    border-radius: 30px;
+    background-color: var(--divBG);
+    margin: 4%;
+    padding-bottom: 15%;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: open-sans, sans-serif;
+}
+
+.divA img {
+    border-radius: 30px;
+    width: 100%;
+    height: 48vh;
+}
+
+.divA h3 {
+    font-family: light, sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 8%;
+    color: var(--Pheader);
+    line-height: 1.2;
+}
+
+.divA p {
+    font-family: open-sans, sans-serif;
+    font-style: italic;
+    color: var(--darkWord);
+    font-size: 1.2rem;
+}
+
+.divA:hover h3,
+.divA:hover p {
+    transform: translate(0,-5px);
+    transition: .5s;
+}
+
+footer {
+    background-color: var(--footer);
+    font-size: .9rem;
+    font-family: light, sans-serif;
+    color: var(--divBG);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+footer p {
+    padding: 3%;
+}
+
+footer span {
+    text-decoration: underline;
+    color: var(--links);
+}
+
+footer span:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+    section {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .divA img {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .divA img {
+        height: 52vh;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section {
+        grid-template-columns: repeat(1,1fr);
+    }
+    header p {
+        width: 100%;
+    }
+}
+
+
+
+
+
